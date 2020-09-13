@@ -6,9 +6,9 @@ services:
     ports:
       - "8000:8000"
   server:
-    build: ./server
-    image: swagger-sample
+    build: .
+    image: furiko/swagger-sample
     ports:
       - "3000:3000"
     volumes:
-      - ./:/go/src/github.com/furiko/swagger-sample/server
+      - ./:/go/src/github.com/furiko/swagger-sample/

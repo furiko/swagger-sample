@@ -5,7 +5,7 @@ HOST_APP_BASE:=$(shell pwd)
 DOCKER_APP_BASE:=/go/src/github.com/furiko/swagger-sample
 
 local/run:
-	$(MAKE) run
+	cd server && make run
 	@echo 'connect server port :3000 !!!'
 
 docker/run:
@@ -23,5 +23,3 @@ docker/stop:
 docker/stop/server:
 	docker container stop $(SERVER_CONTAINER_NAME)
 
-run:
-	fresh
