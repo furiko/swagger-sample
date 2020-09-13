@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
   server:
-    build: .
+    build: ./server
     image: swagger-sample
     ports:
       - "3000:3000"
