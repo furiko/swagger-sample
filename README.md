@@ -23,7 +23,5 @@ $ go get -u github.com/go-swagger/go-swagger/cmd/swagger@v0.25.0
 [Custom Server Tutorial](https://goswagger.io/tutorial/custom-server.html) をこのリポジトリでは参考にする。
 
 ```bash
-$ swagger generate server -a routemangement -A routemanagement \
-    --exclude-main --strict-additional-properties -t gen -f ./swagger.yml
-
+$ swagger generate server -a routemangement --exclude-main --strict-additional-properties -t gen -f ./swagger.yml
 ```
